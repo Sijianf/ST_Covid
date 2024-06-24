@@ -8,4 +8,4 @@ This project focuses on spatial temporal analysis of COVID-19 data. We have deve
 | **Model 1** | No cumulative counts as covariates; Added cross-level random effects |
 | **Model 2** | Added cumulative counts as covariates*; Added cross-level random effects |
 
-*Model 2 also incorporates the mean rate from the previous time point as a covariate, addressing the effect of time series.*
+\*Model 2 also incorporates the mean rate from the previous time point as a covariate, addressing the effect of time series.*
