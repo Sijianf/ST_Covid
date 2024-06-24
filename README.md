@@ -9,6 +9,6 @@ $$\mu^H = \sum_{i=1}^{M} \mu_i^L$$
 | **Model 1** | No cumulative counts as covariates; Added cross-level random effects |
 | **Model 2** | Added cumulative counts as covariates*; Added cross-level random effects |
 
-\*Model 2 also incorporates the mean rate from the previous time point as a covariate, addressing the effect of time series.*
+\**Model 2 also incorporates $\mu_{i,j}^L$ as a covariate, namely the mean rate from the previous time point to address the time series effect.*
 
 Please the codes in thw [models_raw.R](https://github.com/Sijianf/ST_Covid_project/blob/main/models_raw.R).
