@@ -1,6 +1,6 @@
 # Spatial Temporal Analysis of COVID Data (ST_Covid_project)
 
-This project focuses on spatial temporal analysis of COVID-19 data. We have developed a series of basic models to illustrate the differences in their assumptions and outcomes. All models operate under the assumption that the high-level mean is the sum of low-level means: $\mu^H = \sum_{i=1}^M \mu_i^L$.
+This project focuses on spatial temporal analysis of COVID-19 data. We have developed a series of basic models to illustrate the differences in their assumptions and outcomes. All models operate under the assumption that the high-level mean is the sum of low-level means: ```math \mu^H = \sum_{i=1}^M \mu_i^L```.
 
 | Model | Features |
 | ------------ | ------------ |
