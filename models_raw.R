@@ -1,5 +1,6 @@
-
-# Model 0: with no time effect: 
+#-------------------------------------#
+#### Model 0: with no time effect  ####
+#-------------------------------------#
 model0<-nimbleCode({
   
   ### High level deaths 
@@ -17,7 +18,7 @@ model0<-nimbleCode({
   #### Dealing with county level in SC in our example (M=46)
   for(i in 1:M){
     Dlow[i,1]~dpois(DLmu[i,1])
-    log(DLmu[i,1])<-dl0+dl1*log(Ylow[i,1]+0.001)+Dlv[i]+Dhv[1] # This Dhv is needed? 
+    log(DLmu[i,1])<-dl0+dl1*log(Ylow[i,1]+0.001)+Dlv[i]+Dhv[1] # This Dhv[1] is needed? 
     LDev[i,1]<--2*(Dlow[i,1]*log(DLmu[i,1]+0.001)-(DLmu[i,1]+0.001)-lfactorial(Dlow[i,1]))
     
     for(j in 2:Tot){
@@ -50,7 +51,9 @@ model0<-nimbleCode({
 })
 
 
-# Model 1: with time effects: 
+#-------------------------------------#
+#### Model 1: with time effects.   ####
+#-------------------------------------#
 model1<-nimbleCode({
   ### High level deaths 
   #### The high level mean is the sum of lower level mean
