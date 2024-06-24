@@ -11,4 +11,4 @@ $$\mu^H = \sum_{i=1}^{M} \mu_i^L$$
 
 ${^*}$ Model 2 also incorporates $\mu_{i,j}^L$ as a covariate, namely the mean rate from the previous time point to address the time series effect.
 
-Please the codes in the [models_raw.R](https://github.com/Sijianf/ST_Covid_project/blob/main/models_raw.R).
+Please the codes in [models_raw.R](https://github.com/Sijianf/ST_Covid_project/blob/main/models_raw.R).
