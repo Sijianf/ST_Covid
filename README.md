@@ -6,7 +6,7 @@ The basic models (*Model 0 and Model 1*) operate under the assumption that the h
 $$\mu_j^H = \sum_{i=1}^{M} \mu_{i,j}^L$$
 
 The other models estimate the high-level mean at time point $j$ through regression of covariates. Below is an example with lagged time effects: 
-$$\mu_j^H = f(Y_j^H_{case}, Y_j^H_{cumulate}, \mu_{j-1}^H)$$
+$$\mu_j^H = f(Ycase_{j}^H, Ycumulate_{j}^H, \mu_{j-1}^H)$$
 
 | Model | Features |
 | ------------ | ------------ |
