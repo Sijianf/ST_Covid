@@ -10,9 +10,12 @@ model0<-nimbleCode({
   ### High level deaths 
   DHmu[1,1]<-sum(DLmu[1:M,1])
   Dhigh[1,1]~dpois(DHmu[1,1])
+  LDevH[i,1]<--2*(Dlow[i,1]*log(DLmu[i,1]+0.001)-(DLmu[i,1]+0.001)-lfactorial(Dlow[i,1]))
+
   for(j in 2:Tot){
     DHmu[1,j]<-sum(DLmu[1:M,j])
     Dhigh[1,j]~dpois(DHmu[1,j])
+    LDevH[i,1]<--2*(Dlow[i,1]*log(DLmu[i,1]+0.001)-(DLmu[i,1]+0.001)-lfactorial(Dlow[i,1]))
   }
   
   ### Low level deaths (M = 46 county)
@@ -28,7 +31,9 @@ model0<-nimbleCode({
     }
   }
   
-  Dev<-sum(LDev[1:M,1:Tot])
+  DevL<-sum(LDev[1:M,1:Tot])
+  DevH<-sum(LDev[1:M,1:Tot])
+  DevT<-DevL+DevH
   
   for (j in 1:Tot){
     Dhv[j]~dnorm(0,tauDhv)
