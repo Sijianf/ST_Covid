@@ -35,22 +35,14 @@ model0<-nimbleCode({
   LDevsum<-sum(LDev[1:M,1:Tot])
   Devsum<-HDevsum+LDevsum
   
-  for (j in 1:Tot){
-    Dhv[j]~dnorm(0,tauDhv)
-  }
   for (i in 1:M){
     Dlv[i]~dnorm(0,tauDlv)
   }
-  dh0~dnorm(0,taudh0)
-  dh1~dnorm(0,taudh1)
   dl0~dnorm(0,taudl0)
   dl1~dnorm(0,taudl1)
   
   tauDlv~dgamma(2,0.5)
-  tauDhv~dgamma(2,0.5)
-  taudh0~dgamma(2,0.5)
   taudl0~dgamma(2,0.5)
-  taudh1~dgamma(2,0.5)
   taudl1~dgamma(2,0.5)
   #### end model 0 
 })
