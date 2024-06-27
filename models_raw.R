@@ -50,19 +50,19 @@ model0<-nimbleCode({
 #------------------------------------------------------------------------------#
 ####                               Model 1                                  ####
 #------------------------------------------------------------------------------#
-# - High-level mean = sum of low-level means (as above)
+# - High-level mean = sum of low-level means
 # - No cumulative counts as covariates
 # - Added cross-level random effects 
 
 model1<-nimbleCode({
   
   ### High level deaths 
-  DHmu[1,1]<-sum(DLmu[1:M,1])
+  DHmu1[1,1]<-sum(DLmu[1:M,1])
   Dhigh[1,1]~dpois(DHmu[1,1])
   log(DHmu[1,1])<-dh0+dh1*log(DHmu1[1,1]+0.001)+Dhv[1]
   HDev[1,1]<--2*(Dhigh[1,1]*log(DHmu[1,1]+0.001)-(DHmu[1,1]+0.001)-lfactorial(Dhigh[1,1]))
   for(j in 2:Tot){
-    DHmu[1,j]<-sum(DLmu[1:M,j])
+    DHmu1[1,j]<-sum(DLmu[1:M,j])
     Dhigh[1,j]~dpois(DHmu[1,j])
     log(DHmu[1,j])<-dh0+dh1*log(DHmu1[1,j]+0.001)+Dhv[j]
     HDev[1,j]<--2*(Dhigh[1,j]*log(DHmu[1,j]+0.001)-(DHmu[1,j]+0.001)-lfactorial(Dhigh[1,j]))
@@ -116,12 +116,10 @@ model1<-nimbleCode({
 model2<-nimbleCode({
   
   ### High level deaths 
-  DHmu[1,1]<-sum(DLmu[1:M,1])
   Dhigh[1,1]~dpois(DHmu[1,1])
   log(DHmu[1,1])<-dh0+dh1*log(Yhigh[1,1]+0.001)+Dhv[1]
   HDev[1,1]<--2*(Dhigh[1,1]*log(DHmu[1,1]+0.001)-(DHmu[1,1]+0.001)-lfactorial(Dhigh[1,1]))
   for(j in 2:Tot){
-    DHmu[1,j]<-sum(DLmu[1:M,j])
     Dhigh[1,j]~dpois(DHmu[1,j])
     log(DHmu[1,j])<-dh0+dh1*log(Yhigh[1,j]+0.001)+dh2*log(YChigh[1,j]+0.001)+dh3*log(DHmu[1,j-1]+0.001)+Dhv[j]
     HDev[1,j]<--2*(Dhigh[1,j]*log(DHmu[1,j]+0.001)-(DHmu[1,j]+0.001)-lfactorial(Dhigh[1,j]))
@@ -185,12 +183,10 @@ model2<-nimbleCode({
 model3<-nimbleCode({ 
   
   ### High level deaths 
-  DHmu[1,1]<-sum(DLmu[1:M,1])
   Dhigh[1,1]~dpois(DHmu[1,1])
   log(DHmu[1,1])<-dh0+dh1*log(Yhigh[1,1]+0.001)+Dhv[1]
   HDev[1,1]<--2*(Dhigh[1,1]*log(DHmu[1,1]+0.001)-(DHmu[1,1]+0.001)-lfactorial(Dhigh[1,1]))
   for(j in 2:Tot){
-    DHmu[1,j]<-sum(DLmu[1:M,j])
     Dhigh[1,j]~dpois(DHmu[1,j])
     log(DHmu[1,j])<-dh0+dh1*log(Yhigh[1,j]+0.001)+dh2*log(YChigh[1,j]+0.001)+dh3*log(DHmu[1,j-1]+0.001)+Dhv[j]
     HDev[1,j]<--2*(Dhigh[1,j]*log(DHmu[1,j]+0.001)-(DHmu[1,j]+0.001)-lfactorial(Dhigh[1,j]))
