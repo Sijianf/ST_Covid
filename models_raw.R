@@ -182,7 +182,7 @@ model2<-nimbleCode({
 # - Removed lagged time effects in low-level models
 # - Added cross-level random effects 
 
-model3<-nimbleCode({
+model3<-nimbleCode({ 
   
   ### High level deaths 
   DHmu[1,1]<-sum(DLmu[1:M,1])
