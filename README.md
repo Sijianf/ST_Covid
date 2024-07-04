@@ -1,4 +1,4 @@
-# Spatial Temporal Analysis of COVID Data (ST_Covid_project)
+# Spatial Temporal Analysis of COVID Data (ST_Covid)
 
 This project focuses on spatial temporal analysis of COVID-19 data. We have developed a series of basic models to illustrate the differences in their assumptions and outcomes. 
 
