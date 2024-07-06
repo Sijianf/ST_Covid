@@ -8,6 +8,8 @@ $$\mu_j^H = \sum_{i=1}^{M} \mu_{i,j}^L$$
 The other models estimate the high-level mean at time point $j$ through regression of covariates. Below is an example with lagged time effects: 
 $$\mu_j^H = f(Ycase_{j}^H, Ycumulate_{j}^H, \mu_{j-1}^H)$$
 
+## Models Overview
+
 | Model | Features |
 | ------------ | ------------ |
 | **M0** | No regression for high-level; No lagged time effects as covariates; No cross-level random effects |
@@ -15,6 +17,20 @@ $$\mu_j^H = f(Ycase_{j}^H, Ycumulate_{j}^H, \mu_{j-1}^H)$$
 | **M2** | Regression for high-level; Lagged time effects as covariates; Cross-level random effects |
 | **M3** | Regression for high-level; Lagged time effects only in high-level ${}^*$; Cross-level random effects |
 
-${^*}$ Model 3 turns out to be a simpler version of Model 2.
+${}^*$ Model 3 turns out to be a simpler version of Model 2.
 
-Please see the codes in [models_raw.R](https://github.com/Sijianf/ST_Covid_project/blob/main/models_raw.R).
+## Codes
+
+Please see the codes in [models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+
+## Reports
+
+Please see the convergence reports and WAICs here: 
+
+[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+
+[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+
+[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+
+[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
