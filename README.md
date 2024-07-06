@@ -21,7 +21,7 @@ ${}^*$ Model 3 turns out to be a simpler version of Model 2.
 
 ## Codes
 
-Please see the codes in [models_raw.R](https://sijianf.github.io/ST_Covid/codes/models_raw.R).
+Please see the codes in [models_raw.R](https://github.com/Sijianf/ST_Covid/blob/main/codes/models_raw.R).
 
 ## Reports
 
