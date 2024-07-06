@@ -21,16 +21,16 @@ ${}^*$ Model 3 turns out to be a simpler version of Model 2.
 
 ## Codes
 
-Please see the codes in [models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+Please see the codes in [models_raw.R](https://sijianf.github.io/ST_Covid/codes/models_raw.R).
 
 ## Reports
 
 Please see the convergence reports and WAICs here: 
 
-[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+- [Model 0](https://sijianf.github.io/ST_Covid/pages/Report_June_m0.html).
 
-[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+- [Model 1](https://sijianf.github.io/ST_Covid/pages/Report_June_m1.html).
 
-[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+- [Model 2](https://sijianf.github.io/ST_Covid/pages/Report_June_m2.html).
 
-[models_raw.R](https://github.com/aa/bb/blob/main/models_raw.R).
+- [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_June_m3.html).
