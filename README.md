@@ -10,12 +10,12 @@ $$\mu_j^H = f(Ycase_{j}^H, Ycumulate_{j}^H, \mu_{j-1}^H)$$
 
 ## Models Overview
 
-| Model | Features |
-| ------------ | ------------ |
-| **M0** | No regression for high-level; No lagged time effects as covariates; No cross-level random effects |
-| **M1** | No regression for high-level; No lagged time effects as covariates; Cross-level random effects |
-| **M2** | Regression for high-level; Lagged time effects as covariates; Cross-level random effects |
-| **M3** | Regression for high-level; Lagged time effects only in high-level ${}^*$; Cross-level random effects |
+| Model | Features | WAIC |
+| ------------ | ------------ | ------------ |
+| **M0** | No regression for high-level; No lagged time effects as covariates; No cross-level random effects | 255 | 
+| **M1** | No regression for high-level; No lagged time effects as covariates; Cross-level random effects | 259 |
+| **M2** | Regression for high-level; Lagged time effects as covariates; Cross-level random effects | 217 |
+| **M3** | Regression for high-level; Lagged time effects only in high-level ${}^*$; Cross-level random effects | 227 | 
 
 ${}^*$ Model 3 turns out to be a simpler version of Model 2.
 
