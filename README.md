@@ -39,31 +39,32 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 ### High Models
 - **H0**: Sum Only
 - **H0a**: Sum + Shared Temporal Random Effect
-- **H1**: Lagged Death Count Model (? Change to Current Case Count + Shared Temporal Random Effect)
-- **H2**: Current Case Count + Lagged Death Count (? change to H1 + Cumulative Death Count)
-- **H3**: H2 + Cumulative Case (? Change to H2 + Lagged Death Count)
-- **H4**: H3 + Spatial Effects and Additional Model Components
+- **H1**: Current Case Count + Shared Temporal Random Effect
+- **H2**: H1 + Lagged Death Count
+- **H3**: H1 + Cumulative Case
+- **H4**: H1 + Lagged Death Count + Cumulative Case
+- **H5**: H4 + Spatial Effects and Additional Model Components
 
 ### Low Models
 - **L1**: Current Case + Spatial Random Effect + Temporal Random Effect
-- **L1a**: Lagged Death Count + Spatial Random Effect + Temporal Random Effect
-- **L2**: L1 + Cumulative Case
-- **L3**: L2 + Lagged Death Count
-- **L4**: L3 + Spatial-Temporal Random Effect
-- **L5**: L1 + Spatial Convolution
-- **L6**: L4 + Spatial Convolution
+- **L2**: L1 + Lagged Death Count
+- **L3**: L1 + Cumulative Case
+- **L4**: L1 + Lagged Death Count + Cumulative Case
+- **L5**: L4 + Spatial-Temporal Random Effect
+- **L6**: L1 + Spatial Convolution
+- **L7**: L5 + Spatial Convolution
 
-### 7 by 6 Tracking Table
+### 7 by 7 Tracking Table
 
-|         |  **H0**  |  **H0a** |  **H1**  |  **H2**  |  **H3**  |  **H4**  |
-|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| **L1**  |    m0    |    m1    |          |          |          |          |
-| **L1a** |          |          |          |          |          |          |
-| **L2**  |          |          |          |          |    m3    |          |
-| **L3**  |          |          |          |          |    m2    |          |
-| **L4**  |          |          |          |          |          |          |
-| **L5**  |          |          |          |          |          |          |
-| **L6**  |          |          |          |          |          |          |
+|         |  **H0**  |  **H0a** |  **H1**  |  **H2**  |  **H3**  |  **H4**  |  **H5**  |
+|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| **L1**  |    m0    |    m1    |          |    m4    |          |    m3    |          |
+| **L2**  |          |          |          |    m5    |          |          |          |
+| **L3**  |          |          |          |          |          |          |          |
+| **L4**  |          |          |          |          |          |    m2    |          |
+| **L5**  |          |          |          |          |          |          |          |
+| **L6**  |          |          |          |          |          |          |          |
+| **L7**  |          |          |          |    m6    |          |          |          |
 
 ## Reports
 
