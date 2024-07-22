@@ -42,3 +42,35 @@ Please see the detailed convergence reports and WAICs here:
 
 - [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_July_m3.html).
 
+
+# Joint Model Analysis Tracking
+
+## High Models
+- **H0**: Sum Only
+- **H0a**: Sum + Shared Temporal Random Effect
+- **H1**: Lagged Death Count Model
+- **H2**: Current Case Count + Lagged Death Count Model
+- **H3**: H2 + Cumulative Case
+- **H4**: H3 + Spatial Effects and Additional Model Components
+
+## Low Models
+- **L1**: Current Case + Spatial Random Effect + Temporal Random Effect
+- **L1a**: Lagged Death Count + Spatial Random Effect + Temporal Random Effect
+- **L2**: L1 + Cumulative Case
+- **L3**: L2 + Lagged Death Count
+- **L4**: L3 + Spatial-Temporal Random Effect
+- **L5**: L1 + Spatial Convolution
+- **L6**: L4 + Spatial Convolution
+
+## 7 by 6 Tracking Table
+
+|         | **H0** | **H0a** | **H1** | **H2** | **H3** | **H4** |
+|---------|--------|---------|--------|--------|--------|--------|
+| **L1**  |        |         |        |        |        |        |
+| **L1a** |        |         |        |        |        |        |
+| **L2**  |        |         |        |        |        |        |
+| **L3**  |        |         |        |        |        |        |
+| **L4**  |        |         |        |        |        |        |
+| **L5**  |        |         |        |        |        |        |
+| **L6**  |        |         |        |        |        |        |
+
