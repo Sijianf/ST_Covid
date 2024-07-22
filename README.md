@@ -20,7 +20,7 @@ $$\mu_j^H = f(Ycase_{j}^H, Ycumulate_{j}^H, \mu_{j-1}^H)$$
 We now give more details of 4 starting models, and below we will provide a more comprehensive table of candidate models for selection.
 
 | Model | Features |
-|-------|----------|
+|-------|:--------:|
 | m0 | No regression for high-level; No lagged time effects as covariates; No cross-level random effects |
 | m1 | No regression for high-level; No lagged time effects as covariates; Cross-level random effects |
 | m2 | Regression for high-level; Lagged time effects as covariates; Cross-level random effects | 
@@ -53,26 +53,25 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 ### 7 by 6 Tracking Table
 
-|         | **H0** | **H0a** | **H1** | **H2** | **H3** | **H4** |
-|---------|--------|---------|--------|--------|--------|--------|
-| **L1**  |        |         |        |        |        |        |
-| **L1a** |        |         |        |        |        |        |
-| **L2**  |        |         |        |        |        |        |
-| **L3**  |        |         |        |        |        |        |
-| **L4**  |        |         |        |        |        |        |
-| **L5**  |        |         |        |        |        |        |
-| **L6**  |        |         |        |        |        |        |
+|         |  **H0**  |  **H0a** |  **H1**  |  **H2**  |  **H3**  |  **H4**  |
+|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| **L1**  |          |          |          |          |          |          |
+| **L1a** |          |          |          |          |          |          |
+| **L2**  |          |          |          |          |          |          |
+| **L3**  |          |          |          |          |          |          |
+| **L4**  |          |          |          |          |          |          |
+| **L5**  |          |          |          |          |          |          |
+| **L6**  |          |          |          |          |          |          |
 
 ## Reports
 
-<center>
-| Model | DIC H   | DIC L   | DIC3 H   | DIC3 L   | PWAIC H | PWAIC L | WAIC H   | WAIC L   |
-|-------|---------|---------|----------|----------|---------|---------|----------|----------|
-|  m0   | 12344.0 | 12396.5 | 12398.4  | 33900.0  | 86.6    | 161.9   | 12060.5  | 33256.5  |
-|  m1   | 1339.1  | 1329.1  | 1218.7   | 22821.8  | 63.5    | 195.2   | 1004.5   | 22052.9  |
-|  m2   | 1159.6  | 1264.9  | 1123.1   | 22074.8  | 26.6    | 189.1   | 1030.1   | 21330.7  |
-|  m3   | 1143.4  | 1198.7  | 1113.0   | 22638.5  | 23.2    | 203.9   | 1031.5   | 21836.5  |
-</center>
+
+| Model |  DIC H  |   DIC L  |  DIC3 H  |  DIC3 L  |  PWAIC H |  PWAIC L |  WAIC H  |  WAIC L  |
+|:-----:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|  m0   | 12344.0 |  12396.5 | 12398.4  | 33900.0  |  86.6    |  161.9   | 12060.5  | 33256.5  |
+|  m1   | 1339.1  |  1329.1  | 1218.7   | 22821.8  |  63.5    |  195.2   | 1004.5   | 22052.9  |
+|  m2   | 1159.6  |  1264.9  | 1123.1   | 22074.8  |  26.6    |  189.1   | 1030.1   | 21330.7  |
+|  m3   | 1143.4  |  1198.7  | 1113.0   | 22638.5  |  23.2    |  203.9   | 1031.5   | 21836.5  |
 
 Please see the detailed convergence reports and WAICs here: 
 
