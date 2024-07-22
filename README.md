@@ -8,13 +8,15 @@
 
 ## Project Overview
 
-This project focuses on spatial temporal analysis of COVID-19 data. We have developed a series of basic models to illustrate the differences in their assumptions and outcomes.
+This project focuses on spatial temporal analysis of COVID-19 data. We have developed a series of basic models to illustrate the differences in their assumptions and outcomes.  
 
 ### Starting Models 
 The basic models (*Model 0 and Model 1*) operate under the assumption that the high-level mean at time point $j$ is the sum of total $M$ low-level means: 
+
 $$\mu_j^H = \sum_{i=1}^{M} \mu_{i,j}^L$$
 
 The other models estimate the high-level mean at time point $j$ through regression of covariates. Below is an example with lagged time effects: 
+
 $$\mu_j^H = f(Ycase_{j}^H, Ycumulate_{j}^H, \mu_{j-1}^H)$$
 
 We now give more details of 4 starting models, and below we will provide a more comprehensive table of candidate models for selection.
@@ -37,9 +39,9 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 ### High Models
 - **H0**: Sum Only
 - **H0a**: Sum + Shared Temporal Random Effect
-- **H1**: Lagged Death Count Model
-- **H2**: Current Case Count + Lagged Death Count Model
-- **H3**: H2 + Cumulative Case
+- **H1**: Lagged Death Count Model (? Change to Current Case Count + Shared Temporal Random Effect)
+- **H2**: Current Case Count + Lagged Death Count (? change to H1 + Cumulative Death Count)
+- **H3**: H2 + Cumulative Case (? Change to H2 + Lagged Death Count)
 - **H4**: H3 + Spatial Effects and Additional Model Components
 
 ### Low Models
@@ -55,10 +57,10 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 |         |  **H0**  |  **H0a** |  **H1**  |  **H2**  |  **H3**  |  **H4**  |
 |:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| **L1**  |          |          |          |          |          |          |
+| **L1**  |    m0    |    m1    |          |          |          |          |
 | **L1a** |          |          |          |          |          |          |
-| **L2**  |          |          |          |          |          |          |
-| **L3**  |          |          |          |          |          |          |
+| **L2**  |          |          |          |          |    m3    |          |
+| **L3**  |          |          |          |          |    m2    |          |
 | **L4**  |          |          |          |          |          |          |
 | **L5**  |          |          |          |          |          |          |
 | **L6**  |          |          |          |          |          |          |
