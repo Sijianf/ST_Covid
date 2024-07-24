@@ -85,6 +85,9 @@ Please see the detailed convergence reports and WAICs here:
 - [Model 1](https://sijianf.github.io/ST_Covid/pages/Report_July_m1.html)
 - [Model 2](https://sijianf.github.io/ST_Covid/pages/Report_July_m2.html)
 - [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_July_m3.html)
+- [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_July_m4.html)
+- [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_July_m5.html)
+- [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_July_m6.html)
 
 
 
