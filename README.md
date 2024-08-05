@@ -81,7 +81,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |  m7   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
 |  m8   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
 |  m9   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
-%|  m7   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
+<!|  m?   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |>
 
 Please see the detailed convergence reports and WAICs here: 
 
