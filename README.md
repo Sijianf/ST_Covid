@@ -92,9 +92,7 @@ Please see the detailed convergence reports and WAICs here:
 - [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m4.html)
 - [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m5.html)
 - [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m6.html)
-- [Model 7]: running
-- [Model 8]: running
-- [Model 9]: running
+- Model  7 - 9: running
 
 
 
