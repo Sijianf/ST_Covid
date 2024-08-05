@@ -59,12 +59,12 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |         |  **H0**  |  **H0a** |  **H1**  |  **H2**  |  **H3**  |  **H4**  |  **H5**  |
 |:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | **L1**  |    m0    |    m1    |          |    m4    |          |    m3    |          |
-| **L2**  |          |          |          |    m5    |          |          |          |
+| **L2**  |          |    m7    |          |    m5    |          |          |          |
 | **L3**  |          |          |          |          |          |          |          |
-| **L4**  |          |          |          |          |          |    m2    |          |
+| **L4**  |          |    m8    |          |          |          |    m2    |          |
 | **L5**  |          |          |          |          |          |          |          |
 | **L6**  |          |          |          |          |          |          |          |
-| **L7**  |          |          |          |    m6    |          |          |          |
+| **L7**  |          |    m9    |          |    m6    |          |          |          |
 
 ## Reports
 
@@ -78,16 +78,23 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |  m4   | 1142.4  |  22542.2 | 1112.6   | 22638.6  |  23.1    |  204.4   | 1124.1   | 22652.1  |
 |  m5   | 1158.9  |  22013.5 | 1122.7   | 22086.2  |  26.3    |  186.5   | 1136.0   | 22098.6  |
 |  m6   | 1377.0  |  24161.2 | 1243.4   | 21366.1  |  89.0    |  1525.3  | 1310.7   | 22091.6  |
+|  m7   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
+|  m8   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
+|  m9   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
+%|  m7   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
 
 Please see the detailed convergence reports and WAICs here: 
 
-- [Model 0](https://sijianf.github.io/ST_Covid/pages/Report_July_m0.html)
-- [Model 1](https://sijianf.github.io/ST_Covid/pages/Report_July_m1.html)
-- [Model 2](https://sijianf.github.io/ST_Covid/pages/Report_July_m2.html)
-- [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_July_m3.html)
-- [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_July_m4.html)
-- [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_July_m5.html)
-- [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_July_m6.html)
+- [Model 0](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m0.html)
+- [Model 1](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m1.html)
+- [Model 2](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m2.html)
+- [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m3.html)
+- [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m4.html)
+- [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m5.html)
+- [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m6.html)
+- [Model 7]: running
+- [Model 8]: running
+- [Model 9]: running
 
 
 
