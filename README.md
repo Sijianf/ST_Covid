@@ -78,10 +78,15 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |  m4   | 1142.4  |  22542.2 | 1112.6   | 22638.6  |  23.1    |  204.4   | 1124.1   | 22652.1  |
 |  m5   | 1158.9  |  22013.5 | 1122.7   | 22086.2  |  26.3    |  186.5   | 1136.0   | 22098.6  |
 |  m6   | 1377.0  |  24161.2 | 1243.4   | 21366.1  |  89.0    |  1525.3  | 1310.7   | 22091.6  |
-|  m7   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
-|  m8   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
+|  m7   | 1473.9  |  22568.0 | 1312.3   | 22441.7  |  122.9   |  136.6   | 1407.7   | 22448.2  |
+|  m8   | 1447.5  |  22552.6 | 1304.7   | 22449.1  |  117.9   |  136.0   | 1395.5   | 22455.2  |
 |  m9   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
 
+
+DIC	1473.9832	22568.0036
+DIC3	1312.3190	22441.7809
+PWAIC	122.9428	136.6518
+WAIC	1407.7695	22448.2204
 
 Please see the detailed convergence reports and WAICs here: 
 
@@ -92,7 +97,8 @@ Please see the detailed convergence reports and WAICs here:
 - [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m4.html)
 - [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m5.html)
 - [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m6.html)
-- Model  7 - 9: running
+- [Model 7](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m7.html)
+- [Model 8](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m8.html)
 
 
 
