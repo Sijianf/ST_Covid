@@ -61,7 +61,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 | **L1**  |    m0    |    m1    |          |    m4    |          |    m3    |          |
 | **L2**  |          |    m7    |          |    m5    |          |          |          |
 | **L3**  |          |          |          |          |          |          |          |
-| **L4**  |          |    m8    |          |          |          |    m2    |          |
+| **L4**  |          |    m8    |          |    m10   |          |    m2    |          |
 | **L5**  |          |          |          |          |          |          |          |
 | **L6**  |          |          |          |          |          |          |          |
 | **L7**  |          |    m9    |          |    m6    |          |          |          |
@@ -95,7 +95,7 @@ Please see the detailed convergence reports and WAICs here:
 - [Model 7](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m7.html)
 - [Model 8](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m8.html)
 - [Model 9](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m9.html)
-
+- Model 10 is running.  
 
 
 
