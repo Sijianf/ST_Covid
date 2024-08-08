@@ -80,8 +80,8 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |  m6   | 1405.5  |  24268.3 | 1243.8   | 21376.4  |  89.9    |  1524.8  | 1312.6   | 22101.5  |
 |  m7   | 1473.9  |  22568.0 | 1312.3   | 22441.7  |  122.9   |  136.6   | 1407.7   | 22448.2  |
 |  m8   | 1447.5  |  22552.6 | 1304.7   | 22449.1  |  117.9   |  136.0   | 1395.5   | 22455.2  |
-|  m9   |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
-
+|  m9   | 1456.1  |  23776.0 | 1294.4   | 21169.1  |  95.1    |  1535.9  | 1362.5   | 21913.2  |
+|  m10  |    -    |     -    |    -     |     -    |     -    |     -    |     -    |     -    |
 
 Please see the detailed convergence reports and WAICs here: 
 
@@ -94,7 +94,7 @@ Please see the detailed convergence reports and WAICs here:
 - [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m6.html)
 - [Model 7](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m7.html)
 - [Model 8](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m8.html)
-
+- [Model 9](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m9.html)
 
 
 
