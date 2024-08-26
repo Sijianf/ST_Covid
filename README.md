@@ -117,6 +117,24 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 | m9    | $1448$  | $23922$ | $1293$  | $21169$ | $94.6$  | $1537$  | $1361$  | $21915$ |
 | m10   | $1381$  | $22212$ | $1246$  | $22235$ | $90.9$  | $297.1$ | $1316$  | $22267$ |
 
+#### Combined high and low level models 
+
+| Model |   DIC  |  DIC3  |  PWAIC  |  WAIC  |
+|-------|--------|--------|---------|--------|
+| m0    | 23670  | 23741  | 221.1   | 23764  |
+| m1    | 23824  | 23870  | 298.1   | 23919  |
+| m2    | 23567  | 23490  | 389.2   | 23593  |
+| m3    | 24132  | 24085  | 421.4   | 24191  |
+| m4    | 24118  | 24074  | 417.5   | 24179  |
+| m5    | 23580  | 23504  | 383.7   | 23604  |
+| m6    | 24489  | ${\color{red}21977}$  | 1130.8  | ${\color{red}22449}$  |
+| m7    | ${\color{red}23292}$  | 23309  | 279.1   | 23357  |
+| m8    | ${\color{red}23258}$  | ${\color{red}23278}$  | ${\color{red}278.3}$   | 23327  |
+| m9    | 25370  | 22462  | 1631.6  | ${\color{red}23276}$  |
+| m10   | 23593  | 23481  | 388.0   | 23583  |
+
+
+
 Please see the detailed convergence reports and WAICs here: 
 
 - [Model 0](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m0.html)
