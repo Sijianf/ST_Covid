@@ -96,7 +96,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 | m5    | 23299     | 23319      | 283.2       | 23367      |
 | m6    | 23988     | ${\color{red}21828}$ | 1041.4      | 22234      |
 | m7    | ${\color{red}23273}$ | 23303      | ${\color{red}273.0}$  | 23350      |
-| m8    | 23286     | ${\color{red}23278}$ | 277.0       | ${\color{red}23325}$ |
+| m8    | 23286     | 23278 | 277.0       | 23325 |
 | m9    | 23953     | ${\color{red}21810}$ | 1040.1      | ${\color{red}22218}$ |
 | m10   | 23316     | 23311      | 286.4       | 23361      |
 
