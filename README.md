@@ -86,7 +86,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 #### Combined high and low level models 
 
-| Model | DIC Total | DIC3 Total | PWAIC Total | WAIC Total |
+| Model | DIC Total | DIC3 Total | PWAIC Total | WAIC Total | 
 |-------|-----------|------------|-------------|------------|
 | m0    | 23670     | 23741      | <span style="color:red">221.1</span>  | 23764      |
 | m1    | 23822     | 23868      | 296.9       | 23918      |
