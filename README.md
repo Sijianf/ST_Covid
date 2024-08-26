@@ -88,16 +88,16 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 | Model | DIC Total | DIC3 Total | PWAIC Total | WAIC Total | 
 |-------|-----------|------------|-------------|------------|
-| m0    | 23670     | 23741      | <span style="color:red">221.1</span>  | 23764      |
+| m0    | 23670     | 23741      | ${\color{red}221.1}$  | 23764      |
 | m1    | 23822     | 23868      | 296.9       | 23918      |
-| m2    | <span style="color:red">23275</span> | 23292      | 283.3       | 23340      |
+| m2    | ${\color{red}23275}$ | 23292      | 283.3       | 23340      |
 | m3    | 23828     | 23872      | 301.2       | 23922      |
 | m4    | 23831     | 23873      | 301.2       | 23924      |
 | m5    | 23299     | 23319      | 283.2       | 23367      |
-| m6    | 23988     | <span style="color:red">21828</span> | 1041.4      | 22234      |
-| m7    | <span style="color:red">23273</span> | 23303      | <span style="color:red">273.0</span>  | 23350      |
-| m8    | 23286     | <span style="color:red">23278</span> | 277.0       | <span style="color:red">23325</span> |
-| m9    | 23953     | <span style="color:red">21810</span> | 1040.1      | <span style="color:red">22218</span> |
+| m6    | 23988     | ${\color{red}21828}$ | 1041.4      | 22234      |
+| m7    | ${\color{red}23273}$ | 23303      | ${\color{red}273.0}$  | 23350      |
+| m8    | 23286     | ${\color{red}23278}$ | 277.0       | ${\color{red}23325}$ |
+| m9    | 23953     | ${\color{red}21810}$ | 1040.1      | ${\color{red}22218}$ |
 | m10   | 23316     | 23311      | 286.4       | 23361      |
 
 
