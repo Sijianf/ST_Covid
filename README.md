@@ -136,31 +136,17 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 Please see the detailed convergence reports and WAICs here: 
 
-- [Model 0](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m0.html)
-- [Model 1](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m1.html)
-- [Model 2](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m2.html)
-- [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m3.html)
-- [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m4.html)
-- [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m5.html)
-- [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m6.html)
-- [Model 7](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m7.html)
-- [Model 8](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m8.html)
-- [Model 9](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m9.html)
-- [Model 10](https://sijianf.github.io/ST_Covid/pages/Report_Aug_m10.html)
-
-Below are the archived previous pages: 
-
-- [Model 0](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m0.html)
-- [Model 1](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m1.html)
-- [Model 2](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m2.html)
-- [Model 3](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m3.html)
-- [Model 4](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m4.html)
-- [Model 5](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m5.html)
-- [Model 6](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m6.html)
-- [Model 7](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m7.html)
-- [Model 8](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m8.html)
-- [Model 9](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m9.html)
-- [Model 10](https://sijianf.github.io/ST_Covid/pages/archived/Report_Aug_m10.html)
+- [Model 0](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m0.html)
+- [Model 1](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m1.html)
+- [Model 2](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m2.html)
+- [Model 3](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m3.html)
+- [Model 4](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m4.html)
+- [Model 5](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m5.html)
+- [Model 6](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m6.html)
+- [Model 7](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m7.html)
+- [Model 8](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m8.html)
+- [Model 9](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m9.html)
+- [Model 10](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m10.html)
 
 
 
