@@ -84,6 +84,20 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |m10   |1232.8     |22803.8     |1162.5     |**20641** |43.9     |993.4     |1190.1     |**21023.5** |
 |m11   |1221.4     |22086.8     |1159.6     |22148.2   |44.4     |240.4     |1187.6     |22170.2     |
 
+|Model |DIC H                     |DIC L                      |DIC3 H                    |DIC3 L                     |PWAIC H                 |PWAIC L                   |WAIC H                    |WAIC L                     |
+|:-----|:-------------------------|:--------------------------|:-------------------------|:--------------------------|:-----------------------|:-------------------------|:-------------------------|:--------------------------|
+|m1    |${\color{red}{1137.8}}$   |${\color{black}{22532.2}}$ |${\color{red}{1111.1}}$   |${\color{black}{22629.5}}$ |${\color{red}{21.4}}$   |${\color{red}{199.7}}$    |${\color{red}{1121.3}}$   |${\color{black}{22642.6}}$ |
+|m2    |${\color{black}{1211.3}}$ |${\color{black}{22611.1}}$ |${\color{black}{1155.3}}$ |${\color{black}{22713.2}}$ |${\color{black}{41.9}}$ |${\color{black}{255}}$    |${\color{black}{1181.6}}$ |${\color{black}{22735.6}}$ |
+|m3    |${\color{black}{1231.5}}$ |${\color{black}{22092.4}}$ |${\color{black}{1159.7}}$ |${\color{black}{22131}}$   |${\color{black}{43.5}}$ |${\color{black}{240.7}}$  |${\color{black}{1186.6}}$ |${\color{black}{22154.2}}$ |
+|m4    |${\color{black}{1211.3}}$ |${\color{black}{22616.8}}$ |${\color{black}{1153.8}}$ |${\color{black}{22718.5}}$ |${\color{black}{42.2}}$ |${\color{black}{259}}$    |${\color{black}{1180.6}}$ |${\color{black}{22741.2}}$ |
+|m5    |${\color{black}{1226}}$   |${\color{black}{22621.9}}$ |${\color{black}{1153.6}}$ |${\color{black}{22718.7}}$ |${\color{black}{42.7}}$ |${\color{black}{258.1}}$  |${\color{black}{1180.9}}$ |${\color{black}{22742.9}}$ |
+|m6    |${\color{black}{1223.2}}$ |${\color{black}{22091.5}}$ |${\color{black}{1159.2}}$ |${\color{black}{22157.3}}$ |${\color{black}{43.6}}$ |${\color{black}{237.6}}$  |${\color{black}{1186.2}}$ |${\color{black}{22178.5}}$ |
+|m7    |${\color{black}{1227.5}}$ |${\color{black}{23434}}$   |${\color{black}{1162.8}}$ |${\color{black}{20673.8}}$ |${\color{black}{46.3}}$ |${\color{black}{1002.2}}$ |${\color{black}{1192.6}}$ |${\color{black}{21062.6}}$ |
+|m8    |${\color{black}{1215.4}}$ |${\color{black}{22057.8}}$ |${\color{black}{1158.6}}$ |${\color{black}{22143.6}}$ |${\color{black}{43.2}}$ |${\color{black}{229.8}}$  |${\color{black}{1185.8}}$ |${\color{black}{22163.6}}$ |
+|m9    |${\color{black}{1208.4}}$ |${\color{red}{22047.3}}$   |${\color{black}{1158}}$   |${\color{black}{22117.1}}$ |${\color{black}{43.7}}$ |${\color{black}{233.9}}$  |${\color{black}{1186.2}}$ |${\color{black}{22138.8}}$ |
+|m10   |${\color{black}{1232.8}}$ |${\color{black}{22803.8}}$ |${\color{black}{1162.5}}$ |${\color{red}{20641}}$     |${\color{black}{43.9}}$ |${\color{black}{993.4}}$  |${\color{black}{1190.1}}$ |${\color{red}{21023.5}}$   |
+|m11   |${\color{black}{1221.4}}$ |${\color{black}{22086.8}}$ |${\color{black}{1159.6}}$ |${\color{black}{22148.2}}$ |${\color{black}{44.4}}$ |${\color{black}{240.4}}$  |${\color{black}{1187.6}}$ |${\color{black}{22170.2}}$ |
+
 #### Combined high and low level models 
 
 | Model | DIC Total | DIC3 Total | PWAIC Total | WAIC Total | 
