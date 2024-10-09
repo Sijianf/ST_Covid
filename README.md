@@ -149,4 +149,3 @@ Please see the detailed convergence reports and WAICs here:
 - [Model 10](https://sijianf.github.io/ST_Covid/pages/Report_Oct_m10.html)
 
 
-
