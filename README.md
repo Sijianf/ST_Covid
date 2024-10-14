@@ -38,11 +38,12 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 ### High Models
 - **H0**: Sum Only
-- **H0a**: Sum + Shared Temporal Random Effect
-- **H0b**: Intercept + Shared Temporal Random Effect
-- **H1**: Current Case Count + Shared Temporal Random Effect
+- **H0a**: Sum + Temporal Random Effect
+- **H0b**: Intercept + Temporal Random Effect
+- **H1**: Current Case Count + Temporal Random Effect
 - **H2**: H1 + Lagged Death Count
-- **H2a**: Lagged Death Count + Shared Temporal Random Effect
+- **H2a**: Lagged Death Count + Temporal Random Effect
+- **H2b**: Lagged Death Count
 - **H3**: H1 + Cumulative Case
 - **H4**: H1 + Lagged Death Count + Cumulative Case
 - **H5**: H4 + Spatial Effects and Additional Model Components
@@ -58,15 +59,15 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 ### 6 by 7 Tracking Table (variants excluded)
 
-|         |  **H0**  |  **H0a** |  **H0b** |  **H1**  |  **H2**  |  **H2a** |  **H3**  |  **H4**  |  **H5**  |
-|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| **L1**  |    m0    |    m1    |          |          |    m4    |          |          |    m3    |          |
-| **L2**  |          |    m7    |          |          |    m5    |          |          |          |          |
-| **L3**  |          |          |          |          |          |          |          |          |          |
-| **L4**  |          |    m8    |          |          |    m10   |          |          |    m2    |          |
-| **L5**  |          |          |          |          |          |          |          |          |          |
-| **L6**  |          |          |          |          |          |          |          |          |          |
-| **L7**  |          |    m9    |          |          |    m6    |          |          |          |          |
+|         |  **H0**  |  **H0a** |  **H0b** |  **H1**  |  **H2**  |  **H2a** |  **H2b** |  **H3**  |  **H4**  |  **H5**  |
+|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| **L1**  |    m0    |    m1    |          |          |    m4    |          |          |          |    m3    |          |
+| **L2**  |          |    m7    |          |          |    m5    |          |          |          |          |          |
+| **L3**  |          |          |          |          |          |          |          |          |          |          |
+| **L4**  |          |    m8    |          |          |    m10   |          |          |          |    m2    |          |
+| **L5**  |          |          |          |          |          |          |          |          |          |          |
+| **L6**  |          |          |          |          |          |          |          |          |          |          |
+| **L7**  |          |    m9    |          |          |    m6    |          |          |          |          |          |
 
 ## Reports
 
@@ -113,6 +114,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |h0b  |-     |$1212.8$                |$1155.5$                |$41.8$                |$1181.6$                |
 |h2   |m4    |$1385.4$                |$1245.2$                |$91.7$                |$1316.3$                |
 |h2a  |-     |$1385.4$                |$1245.2$                |$91.7$                |$1316.3$                |
+|h2b  |-     |$1385.4$                |$1245.2$                |$91.7$                |$1316.3$                |
 |h4   |m3    |$1391.3$                |$1250.9$                |$92.6$                |$1321.6$                |
 
 #### Separate modeling for low level
