@@ -39,8 +39,10 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 ### High Models
 - **H0**: Sum Only
 - **H0a**: Sum + Shared Temporal Random Effect
+- **H0b**: Intercept + Shared Temporal Random Effect
 - **H1**: Current Case Count + Shared Temporal Random Effect
 - **H2**: H1 + Lagged Death Count
+- **H2a**: Lagged Death Count + Shared Temporal Random Effect
 - **H3**: H1 + Cumulative Case
 - **H4**: H1 + Lagged Death Count + Cumulative Case
 - **H5**: H4 + Spatial Effects and Additional Model Components
@@ -54,7 +56,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 - **L6**: L1 + Spatial Convolution
 - **L7**: L5 + Spatial Convolution
 
-### 7 by 7 Tracking Table
+### 6 by 7 Tracking Table (variants excluded)
 
 |         |  **H0**  |  **H0a** |  **H0b** |  **H1**  |  **H2**  |  **H2a** |  **H3**  |  **H4**  |  **H5**  |
 |:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -108,7 +110,9 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 |:----|:-----|:-----------------------|:-----------------------|:---------------------|:-----------------------|
 |H0   |m0    |${\color{red}{1137.8}}$ |${\color{red}{1111.1}}$ |${\color{red}{21.4}}$ |${\color{red}{1121.3}}$ |
 |H0a  |m1    |$1212.8$                |$1155.5$                |$41.8$                |$1181.6$                |
+|H0b  |-     |$1212.8$                |$1155.5$                |$41.8$                |$1181.6$                |
 |H2   |m4    |$1385.4$                |$1245.2$                |$91.7$                |$1316.3$                |
+|H2a  |-     |$1385.4$                |$1245.2$                |$91.7$                |$1316.3$                |
 |H4   |m3    |$1391.3$                |$1250.9$                |$92.6$                |$1321.6$                |
 
 #### Separate modeling for low level
