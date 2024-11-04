@@ -37,7 +37,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 ## Tracking of Model Selection
 
 ### High Models
-- **H0**: Sum Only
+- **H0**: Sum of low-levels + Random effects (Temproal)
 - **H0a**: Sum + Temporal Random Effect
 - **H0b**: Intercept + Temporal Random Effect
 - **H1**: Current Case Count + Temporal Random Effect
@@ -49,13 +49,13 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 - **H5**: H4 + Spatial Effects and Additional Model Components
 
 ### Low Models
-- **L1**: Current Case + Spatial Random Effect + Temporal Random Effect
-- **L2**: L1 + Lagged Death Count
-- **L3**: L1 + Cumulative Case
-- **L4**: L1 + Lagged Death Count + Cumulative Case
-- **L5**: L4 + Spatial-Temporal Random Effect
-- **L6**: L1 + Spatial Convolution
-- **L7**: L5 + Spatial Convolution
+- **L1**: Current Case Count + Random Effect (Spatial; Temporal)
+- **L2**: Current Case Count + Lagged Death Count + Random Effect (Spatial; Temporal)
+- **L3**: Current Case Count + Cumulative Case + Random Effect (Spatial; Temporal)
+- **L4**: Current Case Count + Lagged Death Count + Cumulative Case + Random Effect (Spatial; Temporal)
+- **L5**: Current Case Count + Lagged Death Count + Cumulative Case + Random Effect (Spatial; Temporal; Spatial-Temporal)
+- **L6**: Current Case Count + Random Effect (Spatial; Temporal) + Spatial Convolution
+- **L7**: Current Case Count + Lagged Death Count + Cumulative Case + Random Effect (Spatial; Temporal; Spatial-Temporal) + Spatial Convolution
 
 ### 6 by 7 Tracking Table (variants excluded)
 
@@ -67,7 +67,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 | **L4**  |          |    m8    |          |          |    m10   |          |          |          |    m2    |          |
 | **L5**  |          |          |          |          |          |          |          |          |          |          |
 | **L6**  |          |          |          |          |          |          |          |          |          |          |
-| **L7**  |          |    m9    |          |          |    m6    |          |          |          |          |          |
+| **L7**  |    m11   |    m9    |          |          |    m6    |          |          |          |          |          |
 
 ## Reports
 
