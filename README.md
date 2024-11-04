@@ -37,37 +37,37 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 ## Tracking of Model Selection
 
 ### High Models
-- **H0**: Sum of low-levels + Random effects (Temproal)
+- **H0**: Sum Only
 - **H0a**: Sum + Temporal Random Effect
 - **H0b**: Intercept + Temporal Random Effect
 - **H1**: Current Case Count + Temporal Random Effect
 - **H2**: H1 + Lagged Death Count
-- **H2a**: Lagged Death Count + Temporal Random Effect
-- **H2b**: Lagged Death Count
-- **H3**: H1 + Cumulative Case
-- **H4**: H1 + Lagged Death Count + Cumulative Case
+- **H3**: H1 + Cumulative Case Count
+- **H4**: H1 + Lagged Death Count + Cumulative Case Count
 - **H5**: H4 + Spatial Effects and Additional Model Components
 
 ### Low Models
-- **L1**: Current Case Count + Random Effect (Spatial; Temporal)
-- **L2**: Current Case Count + Lagged Death Count + Random Effect (Spatial; Temporal)
-- **L3**: Current Case Count + Cumulative Case + Random Effect (Spatial; Temporal)
-- **L4**: Current Case Count + Lagged Death Count + Cumulative Case + Random Effect (Spatial; Temporal)
-- **L5**: Current Case Count + Lagged Death Count + Cumulative Case + Random Effect (Spatial; Temporal; Spatial-Temporal)
-- **L6**: Current Case Count + Random Effect (Spatial; Temporal) + Spatial Convolution
-- **L7**: Current Case Count + Lagged Death Count + Cumulative Case + Random Effect (Spatial; Temporal; Spatial-Temporal) + Spatial Convolution
+- **L1**: Current Case Count + Spatial Random Effect + Temporal Random Effect
+- **L2**: L1 + Lagged Death Count
+- **L3**: L1 + Cumulative Case Count
+- **L4**: L1 + Lagged Death Count + Cumulative Case Count
+- **L5**: L4 + Spatial Temporal Random Effect
+- **L6**: L1 + Spatial Convolution
+- **L7**: L5 + Spatial Convolution
+- **L7a**: L7 - Spatial Random Effect - Spatial Temporal Random Effect
 
-### 6 by 7 Tracking Table (variants excluded)
+### 8 by 8 Tracking Table
 
-|         |  **H0**  |  **H0a** |  **H0b** |  **H1**  |  **H2**  |  **H2a** |  **H2b** |  **H3**  |  **H4**  |  **H5**  |
-|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| **L1**  |    m0    |    m1    |          |          |    m4    |          |          |          |    m3    |          |
-| **L2**  |          |    m7    |          |          |    m5    |          |          |          |          |          |
-| **L3**  |          |          |          |          |          |          |          |          |          |          |
-| **L4**  |          |    m8    |          |          |    m10   |          |          |          |    m2    |          |
-| **L5**  |          |          |          |          |          |          |          |          |          |          |
-| **L6**  |          |          |          |          |          |          |          |          |          |          |
-| **L7**  |    m11   |    m9    |          |          |    m6    |          |          |          |          |          |
+|         |  **H0**  |  **H0a** |  **H0b** |  **H1**  |  **H2**  |  **H3**  |  **H4**  |  **H5**  |
+|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| **L1**  |    m0    |    m1    |    m11   |          |    m4    |          |    m3    |          |
+| **L2**  |          |    m7    |    m17   |          |    m5    |          |          |          |
+| **L3**  |          |          |          |          |          |          |          |          |
+| **L4**  |          |    m8    |    m18   |          |    m10   |          |    m2    |          |
+| **L5**  |          |          |          |          |          |          |          |          |
+| **L6**  |          |          |          |          |          |          |          |          |
+| **L7**  |    m12   |    m9    |    m19   |          |    m6    |          |          |          |
+| **L7a** |    m13   |    m14   |    m15   |          |    m16   |          |    m20   |          |
 
 ## Reports
 
