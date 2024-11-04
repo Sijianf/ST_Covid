@@ -67,7 +67,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 | **L5**  |          |          |          |          |          |          |          |          |
 | **L6**  |          |          |          |          |          |          |          |          |
 | **L7**  |    m12   |    m9    |    m19   |          |    m6    |          |          |          |
-| **L7a** |    m13   |    m14   |    m15   |          |    m16   |          |    m20   |          |
+| **L7a** |    m13   |          |    m14   |          |    m15   |          |    m16   |          |
 
 ## Reports
 
