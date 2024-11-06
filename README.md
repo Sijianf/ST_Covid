@@ -52,8 +52,8 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 - **L3**: L1 + Cumulative Case Count
 - **L4**: L1 + Lagged Death Count + Cumulative Case Count
 - **L5**: L4 + Spatial Temporal Random Effect
-- **L6**: L1 + Spatial Convolution
-- **L7**: L5 + Spatial Convolution
+- **L6**: L1 + Spatial CAR Model
+- **L7**: L5 + Spatial CAR Model
 - **L7a**: L7 - Spatial Random Effect - Spatial Temporal Random Effect
 
 ### 8 by 8 Tracking Table
@@ -64,7 +64,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 | **L2**  |          |    m7    |    m17   |          |    m5    |          |          |          |
 | **L3**  |          |          |          |          |          |          |          |          |
 | **L4**  |          |    m8    |    m18   |          |    m10   |          |    m2    |          |
-| **L5**  |          |          |          |          |          |          |          |          |
+| **L5**  |          |          |    m20   |          |          |          |          |          |
 | **L6**  |          |          |          |          |          |          |          |          |
 | **L7**  |    m12   |    m9    |    m19   |          |    m6    |          |          |          |
 | **L7a** |    m13   |          |    m14   |          |    m15   |          |    m16   |          |

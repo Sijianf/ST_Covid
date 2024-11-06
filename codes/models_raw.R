@@ -2765,12 +2765,134 @@ model19s<-nimbleCode({
 #------------------------------------------------------------------------------#
 ####                               Model 20                                 ####
 #------------------------------------------------------------------------------#
+model20<-nimbleCode({
+  
+  ### High level deaths
+  DHmu1[1,1]<-sum(DLmu[1:M,1])
+  Dhigh[1,1]~dpois(DHmu[1,1])
+  log(DHmu[1,1])<-dh0+Dhv[1]
+  HDev[1,1]<--2*(Dhigh[1,1]*log(DHmu[1,1]+0.001)-(DHmu[1,1]+0.001)-lfactorial(Dhigh[1,1]))
+  for(j in 2:Tot){
+    DHmu1[1,j]<-sum(DLmu[1:M,j])
+    Dhigh[1,j]~dpois(DHmu[1,j])
+    log(DHmu[1,j])<-dh0+Dhv[j]
+    HDev[1,j]<--2*(Dhigh[1,j]*log(DHmu[1,j]+0.001)-(DHmu[1,j]+0.001)-lfactorial(Dhigh[1,j]))
+  }
+  
+  ### Low level deaths (M = 46 county)
+  for(i in 1:M){
+    Dlow[i,1]~dpois(DLmu[i,1])
+    log(DLmu[i,1])<-dl0+dl1*log(Ylow[i,1]+0.001)+dl2*log(YClow[i,1]+0.001)+Dlv1[i]+Dlv2[1]+Dlv[i,1]+Dhv[1]
+    LDev[i,1]<--2*(Dlow[i,1]*log(DLmu[i,1]+0.001)-(DLmu[i,1]+0.001)-lfactorial(Dlow[i,1]))
+    
+    for(j in 2:Tot){
+      Dlow[i,j]~dpois(DLmu[i,j])
+      log(DLmu[i,j])<-dl0+dl1*log(Ylow[i,j]+0.001)+dl2*log(YClow[i,j]+0.001)+dl3*log(Dlow[i,j-1]+0.001)+Dlv1[i]+Dlv2[j]+Dlv[i,j]+Dhv[j]
+      LDev[i,j]<--2*(Dlow[i,j]*log(DLmu[i,j]+0.001)-(DLmu[i,j]+0.001)-lfactorial(Dlow[i,j]))
+    }
+  }
+  
+  HDevsum<-sum(HDev[1,1:Tot])
+  LDevsum<-sum(LDev[1:M,1:Tot])
+  Devsum<-HDevsum+LDevsum
+  
+  for (i in 1:M){
+    Dlv1[i]~dnorm(0,tauDlv1)
+  }
+  for (j in 1:Tot){
+    Dhv[j]~dnorm(0,tauDhv)
+    Dlv2[j]~dnorm(0,tauDlv2)
+    for (i in 1:M){
+      Dlv[i,j]~dnorm(0,tauDlv)
+    }
+  }
+  
+  tauDhv~dgamma(2,0.5)
+  tauDlv~dgamma(2,0.5)
+  tauDlv1~dgamma(2,0.5)
+  tauDlv2~dgamma(2,0.5)
+  
+  dh0~dnorm(0,taudh0)
+  dl0~dnorm(0,taudl0)
+  dl1~dnorm(0,taudl[1])
+  dl2~dnorm(0,taudl[2])
+  dl3~dnorm(0,taudl[3])
+  
+  taudh0~dgamma(2,0.5)
+  taudl0~dgamma(2,0.5)
+  for (k in 1:3){
+    taudl[k]~dgamma(2,0.5)
+  }
+
+  #### end model 20
+})
 
 
 
 #------------------------------------------------------------------------------#
 ####                               Model 20s                                ####
 #------------------------------------------------------------------------------#
+model20s<-nimbleCode({
+  
+  ### High level deaths
+  DHmu1[1,1]<-sum(DLmu[1:M,1])
+  Dhigh[1,1]~dpois(DHmu[1,1])
+  log(DHmu[1,1])<-dh0+Dhv[1]
+  HDev[1,1]<--2*(Dhigh[1,1]*log(DHmu[1,1]+0.001)-(DHmu[1,1]+0.001)-lfactorial(Dhigh[1,1]))
+  for(j in 2:Tot){
+    DHmu1[1,j]<-sum(DLmu[1:M,j])
+    Dhigh[1,j]~dpois(DHmu[1,j])
+    log(DHmu[1,j])<-dh0+Dhv[j]
+    HDev[1,j]<--2*(Dhigh[1,j]*log(DHmu[1,j]+0.001)-(DHmu[1,j]+0.001)-lfactorial(Dhigh[1,j]))
+  }
+  
+  ### Low level deaths (M = 46 county)
+  for(i in 1:M){
+    Dlow[i,1]~dpois(DLmu[i,1])
+    log(DLmu[i,1])<-dl0+dl1*log(Ylow[i,1]+0.001)+dl2*log(YClow[i,1]+0.001)+Dlv1[i]+Dlv2[1]+Dlv[i,1]
+    LDev[i,1]<--2*(Dlow[i,1]*log(DLmu[i,1]+0.001)-(DLmu[i,1]+0.001)-lfactorial(Dlow[i,1]))
+    
+    for(j in 2:Tot){
+      Dlow[i,j]~dpois(DLmu[i,j])
+      log(DLmu[i,j])<-dl0+dl1*log(Ylow[i,j]+0.001)+dl2*log(YClow[i,j]+0.001)+dl3*log(Dlow[i,j-1]+0.001)+Dlv1[i]+Dlv2[j]+Dlv[i,j]
+      LDev[i,j]<--2*(Dlow[i,j]*log(DLmu[i,j]+0.001)-(DLmu[i,j]+0.001)-lfactorial(Dlow[i,j]))
+    }
+  }
+  
+  HDevsum<-sum(HDev[1,1:Tot])
+  LDevsum<-sum(LDev[1:M,1:Tot])
+  Devsum<-HDevsum+LDevsum
+  
+  for (i in 1:M){
+    Dlv1[i]~dnorm(0,tauDlv1)
+  }
+  for (j in 1:Tot){
+    Dhv[j]~dnorm(0,tauDhv)
+    Dlv2[j]~dnorm(0,tauDlv2)
+    for (i in 1:M){
+      Dlv[i,j]~dnorm(0,tauDlv)
+    }
+  }
+  
+  tauDhv~dgamma(2,0.5)
+  tauDlv~dgamma(2,0.5)
+  tauDlv1~dgamma(2,0.5)
+  tauDlv2~dgamma(2,0.5)
+  
+  dh0~dnorm(0,taudh0)
+  dl0~dnorm(0,taudl0)
+  dl1~dnorm(0,taudl[1])
+  dl2~dnorm(0,taudl[2])
+  dl3~dnorm(0,taudl[3])
+  
+  taudh0~dgamma(2,0.5)
+  taudl0~dgamma(2,0.5)
+  for (k in 1:3){
+    taudl[k]~dgamma(2,0.5)
+  }
+
+  #### end model 20s
+})
 
 
 
