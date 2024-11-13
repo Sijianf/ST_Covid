@@ -99,7 +99,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 
 
-### Separate modeling (Light grey is not truly separated models.)
+### Separate modeling (Colored in ${\color{grey}{grey}}$ is not truly separated models.)
 
 |Model                |DIC H                   |DIC L                    |DIC3 H                  |DIC3 L                   |WAIC H                  |WAIC L                   |WAIC Total (High + Low)  |
 |:--------------------|:-----------------------|:------------------------|:-----------------------|:------------------------|:-----------------------|:------------------------|:-----------------------:|
