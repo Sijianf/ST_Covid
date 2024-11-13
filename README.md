@@ -38,23 +38,23 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 ### High Models
 - **H0**: Sum Only
-- **H0a**: Sum + Temporal Random Effect
-- **H0b**: Intercept + Temporal Random Effect
-- **H1**: Current Case Count + Temporal Random Effect
+- **H0a**: Sum + Temporal Random Intercept
+- **H0b**: Intercept + Temporal Random Intercept
+- **H1**: Current Case Count + Temporal Random Intercept
 - **H2**: H1 + Lagged Death Count
 - **H3**: H1 + Cumulative Case Count
 - **H4**: H1 + Lagged Death Count + Cumulative Case Count
 - **H5**: H4 + Spatial Effects and Additional Model Components
 
 ### Low Models
-- **L1**: Current Case Count + Spatial Random Effect + Temporal Random Effect
+- **L1**: Current Case Count + Spatial Random Intercept + Temporal Random Intercept
 - **L2**: L1 + Lagged Death Count
 - **L3**: L1 + Cumulative Case Count
 - **L4**: L1 + Lagged Death Count + Cumulative Case Count
-- **L5**: L4 + Spatial Temporal Random Effect
+- **L5**: L4 + Spatial Temporal Grid Random Intercepts
 - **L6**: L1 + Spatial CAR Model
 - **L7**: L5 + Spatial CAR Model
-- **L7a**: L7 - Spatial Random Effect - Spatial Temporal Random Effect
+- **L7a**: L7 - Spatial Random Intercept - Spatial Temporal Grid Random Intercepts
 
 ### 8 by 8 Tracking Table
 
@@ -99,7 +99,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 
 
-### Separate modeling
+### Separate modeling (Light grey is not truly separated models.)
 
 |Model                |DIC H                   |DIC L                    |DIC3 H                  |DIC3 L                   |WAIC H                  |WAIC L                   |WAIC Total (High + Low)  |
 |:--------------------|:-----------------------|:------------------------|:-----------------------|:------------------------|:-----------------------|:------------------------|:-----------------------:|
