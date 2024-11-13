@@ -101,7 +101,7 @@ Please see the model codes in [models_raw.R](https://github.com/Sijianf/ST_Covid
 
 ### Separate modeling 
 
-Please [click here](https://github.com/Sijianf/ST_Covid/blob/main/pages/Full_Table_S.md) for the full table. The models colored in ${\color{grey}{grey}}$ is not truly separated models.
+Please [click here](https://github.com/Sijianf/ST_Covid/blob/main/pages/Full_Table_S.md) for the full table. The models colored in ${\color{grey}{grey}}$ are not truly separated models.
 
 
 #### Separate modeling for high level

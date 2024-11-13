@@ -1,4 +1,4 @@
-### The models colored in ${\color{grey}{grey}}$ is not truly separated models.
+### The models colored in ${\color{grey}{grey}}$ are not truly separated models.
 
 |Model                |DIC H                   |DIC L                    |DIC3 H                  |DIC3 L                   |WAIC H                  |WAIC L                   |WAIC Total (High + Low)  |
 |:--------------------|:-----------------------|:------------------------|:-----------------------|:------------------------|:-----------------------|:------------------------|:-----------------------:|
